@@ -8,12 +8,6 @@ import "bootstrap";
 //include your index.scss file into the bundle
 import "../styles/index.scss";
 
-//import your own components
-//import { App } from "./component/home.js";
-
-//render your react application
-//ReactDOM.render(<App />, document.querySelector("#app"));
-
 import { Counter } from "./component/counter.js";
 
 let counter = 0;

@@ -9,21 +9,19 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+//import { App } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+//ReactDOM.render(<App />, document.querySelector("#app"));
 
-import "src/js/component/counter.css";
-//import "bootstrap/dist/css/bootstrap.css";
-import SecondsCounter from "src/js/component/SecondsCounter.js";
+import { Counter } from "./component/counter.js";
 
 let counter = 0;
 
 setInterval(function() {
 	ReactDOM.render(
-		<SecondsCounter seconds={counter} />,
-		document.getElementById("root")
+		<Counter seconds={counter} />,
+		document.getElementById("app")
 	);
 	counter += 1;
 }, 1000);
